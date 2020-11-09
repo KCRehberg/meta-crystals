@@ -8,7 +8,6 @@ const enforce = require('express-sslify');
 if (process.env.NODE_ENV !== 'production') require('dotenv').config();
 
 const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
-
 const app = express();
 const port = process.env.PORT || 5000;
 
